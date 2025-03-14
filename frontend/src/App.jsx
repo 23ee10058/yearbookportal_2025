@@ -8,7 +8,8 @@ import ItchListPage from "./components/itchList";
 import Login from "./components/login";
 import Body from "./components/Body"
 import { BrowserRouter, Routes, Route ,NavLink  } from "react-router-dom";
-import './App.css'
+import './App.css';
+import Home from "./components/Home";
 
 const App = () => {
   const [message, setMessage] = useState("");
@@ -24,6 +25,7 @@ const App = () => {
         
        <Navbar></Navbar> 
       <Routes>
+        <Route path="" Component={Home}></Route>
         <Route path="/profile" Component={Body}></Route>
         <Route path="/Login" Component={Login}></Route>
         <Route path="/ViewItchList" Component={ViewItchList}></Route>

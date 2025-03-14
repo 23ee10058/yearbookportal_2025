@@ -67,9 +67,12 @@ button:focus-visible {
   }
 }
 html, body {
-  overflow-x: hidden; /* Prevents horizontal scrolling */
-  margin: 0;
-  padding: 0;
-  width: 100%;
+  
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #12172b;
+    font-family: Arial, sans-serif;
+
 }
 
